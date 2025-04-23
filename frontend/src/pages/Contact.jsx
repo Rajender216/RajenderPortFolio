@@ -9,7 +9,7 @@ const Contact = () => {
     >
       {/* Spline Visual */}
       <div className="w-full md:w-1/2 mb-10 md:mb-0 flex justify-center">
-        <div className="h-[373px] min-w-[440px] sm:w-80 md:w-96 rounded-xl overflow-hidden shadow-[0_0_40px_rgba(34,211,238,0.2)] ">
+        <div className="w-full sm:w-80 md:w-96 rounded-xl overflow-hidden shadow-[0_0_40px_rgba(34,211,238,0.2)] ">
           <Spline scene="/Contact2.splinecode" />
         </div>
       </div>
