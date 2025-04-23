@@ -5,11 +5,11 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="h-fit lg:min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-16 bg-black"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-16 bg-black border-b border-gray-700"
     >
       {/* Spline Visual */}
       <div className="w-full md:w-1/2 mb-10 md:mb-0 flex justify-center">
-        <div className="w-full sm:w-80 md:w-96 rounded-xl overflow-hidden shadow-[0_0_40px_rgba(34,211,238,0.2)] ">
+        <div className="w-110 h-80 md:w-96 md:h-96 rounded-xl overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.2)] border border-cyan-400">
           <Spline scene="/Contact2.splinecode" />
         </div>
       </div>
@@ -18,8 +18,7 @@ const Contact = () => {
       <div className="w-full md:w-1/2 max-w-lg text-white space-y-6">
         <h2 className="text-4xl font-bold text-teal-400 mb-2">Let's Connect</h2>
         <p className="text-gray-400 mb-4">
-          Have a project in mind or just want to say hello? Feel free to reach
-          out!
+          Have a project in mind or just want to say hello? Feel free to reach out!
         </p>
 
         <form className="space-y-4">
