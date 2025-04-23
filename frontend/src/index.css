@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+body {
+  background-color: #1a1a1a;
+  color: #2dd4bf;
+  cursor: url("./assets/cursor.png"), auto;
+}
+
+.he1 {
+  color: #f0f0f0;
+}
+
+.A1 {
+  color: #004d61;
+}
+.A2 {
+  color: #822659;
+}
+
+.bt {
+  color: #3e5641;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #1e1e1e inset !important;
+  -webkit-text-fill-color: #2dd4bf !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* 
+  text teal -400
+  border green -700
+  button hover purple -500
+
+  button green -500 */
