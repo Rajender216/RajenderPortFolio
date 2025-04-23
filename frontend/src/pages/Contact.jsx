@@ -3,6 +3,7 @@ import Spline from "@splinetool/react-spline";
 
 const Contact = () => {
   return (
+    
     <section
       id="contact"
       className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-16 bg-black border-b border-gray-700"
