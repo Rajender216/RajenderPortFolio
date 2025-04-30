@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Robot from "./pages/Robot";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           }
         />
         <Route path="/register" element={<Register />} />
+        <Route path="/robot" element={<Robot />} />
       </Routes>
     </div>
   );
