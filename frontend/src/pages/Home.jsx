@@ -27,9 +27,7 @@ const Home = () => {
         <h1 className="text-4xl font-bold text-teal-400">Hi, I'm Rajender</h1>
         <p className="text-gray-300 text-lg leading-relaxed">
           I'm a passionate{" "}
-          <span className="text-purple-500 font-semibold">
-            Frontend Developer
-          </span>{" "}
+          <span className="text-purple-500 font-semibold">Web Developer</span>{" "}
           and a fresh graduate in Computer Science. I love building beautiful
           and functional web applications using modern technologies like{" "}
           <span className="text-green-400">React</span>,{" "}
