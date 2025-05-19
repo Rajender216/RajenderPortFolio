@@ -29,12 +29,12 @@ const Projects = () => {
           link="https://store-virid-phi.vercel.app/"
         />
         <Card
-          title="Rajender - PortFolio"
-          description="A personal portfolio website showcasing my projects, skills, and experience, designed to highlight my frontend development expertise and provide an interactive overview of my work."
-          image="/portfolio.png"
-          techStack={["React", "Vite", "API"]}
-          gitlink="https://github.com/Rajender216/RajenderPortFolio"
-          link="https://rajender-port-folio.vercel.app/"
+          title="Blogify"
+          description="A modern blog web application with features to create, auto-save, edit, and publish posts with image support."
+          image="/Blog.png"
+          techStack={["Mongodb", "Express", "React-Vite", "Node.js"]}
+          gitlink="https://github.com/Rajender216/Blog-app"
+          link="https://blog-app-ff.vercel.app/"
         />
       </div>
     </section>

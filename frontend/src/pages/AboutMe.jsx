@@ -5,7 +5,6 @@ const clients = [
   "fexzns",
   "Globe-News",
   "Monfsesx",
-  "Amazon",
   "CreativeCore",
   "DevStream",
   "LogicLabs",
