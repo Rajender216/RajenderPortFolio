@@ -36,6 +36,14 @@ const Projects = () => {
           gitlink="https://github.com/Rajender216/Blog-app"
           link="https://blog-app-ff.vercel.app/"
         />
+        <Card
+          title="Eventify"
+          description="Discover and book the latest events in Sydney with real-time updates and seamless ticket access."
+          image="/Event.png"
+          techStack={["web scraping","Mongodb", "Express", "React-Vite", "Node.js"]}
+          gitlink="https://github.com/Rajender216/Eventiy"
+          link="https://eventiyfront.vercel.app/"
+        />
       </div>
     </section>
   );
