@@ -14,7 +14,12 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://rajender-port-folio.vercel.app"],
+    credentials: true,
+  })
+);
 
 // Route (endpoints)
 app.use("/api/v1/auth", userRouter);
