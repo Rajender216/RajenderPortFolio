@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Robot from "./pages/Robot";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         />
         <Route path="/register" element={<Register />} />
         <Route path="/robot" element={<Robot />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
