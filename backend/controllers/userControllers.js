@@ -23,10 +23,21 @@ function storeOtpTemporarily(key, otp) {
 
 const sendOtp = async ({ email, otp }) => {
   await transporter.sendMail({
-    from: process.env.EMAIL_USER,
+    from: `"Raabadi and Code Support" <${process.env.EMAIL_USER}>`, // Custom display name
     to: email,
-    subject: "OTP for verification",
-    text: `Your OTP is ${otp}`,
+    subject: "Verify Your Email - OTP Inside",
+    text: `Hello,
+
+Thank you for signing up with CloudVids.
+
+Your One-Time Password (OTP) for verification is: ${otp}
+
+This OTP is valid for the next 10 minutes. Please do not share it with anyone.
+
+If you did not request this, you can safely ignore this email.
+
+Regards,  
+Raabadi and Code Team`,
   });
 };
 

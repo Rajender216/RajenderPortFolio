@@ -31,11 +31,9 @@ const Register = () => {
           password,
         }
       );
-      console.log(response.data);
       if (response.data.success) {
         toast.success(response.data.message);
         setShowOtp(true);
-        console.log("Hello");
       } else {
         toast.error(response.data.message);
       }
@@ -77,7 +75,6 @@ const Register = () => {
           username,
         }
       );
-      console.log(response.data.success);
       if (response.data.success) {
         toast.success(response.data.message);
         setShowOtp(false);
