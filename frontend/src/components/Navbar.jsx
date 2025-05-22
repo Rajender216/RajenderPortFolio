@@ -121,6 +121,7 @@ const ContactButton = ({ mobile }) => {
 
 const ProfileDropdown = ({ mobile, setIsOpen }) => {
   const [open, setOpen] = useState(false);
+  const { navigate } = useContext(Pcontext);
 
   const commonStyles =
     "px-4 py-2 flex items-center gap-2 hover:bg-purple-600 hover:text-white cursor-pointer transition-all";
@@ -142,6 +143,7 @@ const ProfileDropdown = ({ mobile, setIsOpen }) => {
         navigate("/");
       }
     } catch (error) {
+      console.log(error);
       toast.error("Logout failed");
     }
   };
