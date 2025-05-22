@@ -28,7 +28,7 @@ const sendOtp = async ({ email, otp }) => {
     subject: "Verify Your Email - OTP Inside",
     text: `Hello,
 
-Thank you for signing up with CloudVids.
+Thank you for signing up with Raabadi and Code.
 
 Your One-Time Password (OTP) for verification is: ${otp}
 
