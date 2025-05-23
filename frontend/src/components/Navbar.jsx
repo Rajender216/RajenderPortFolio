@@ -18,9 +18,19 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo Section */}
             <div className="flex-shrink-0">
-              <span className="text-2xl font-bold text-teal-400 cursor-pointer transition-all duration-300 hover:text-purple-500 hover:scale-105">
-                RC
-              </span>
+              <div className="group perspective-[800px] cursor-pointer">
+                <div className="relative w-36 h-10 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                  {/* Front Face */}
+                  <div className="absolute inset-0 flex items-center justify-center text-2xl font-bold text-teal-400 bg-transparent backface-hidden">
+                    RC
+                  </div>
+
+                  {/* Back Face */}
+                  <div className="absolute inset-0 flex items-center justify-center text-lg font-semibold text-purple-300 bg-transparent rotate-y-180 backface-hidden">
+                    Raabadi & Code
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Desktop Navigation */}

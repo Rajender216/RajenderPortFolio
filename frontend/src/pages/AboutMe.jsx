@@ -1,13 +1,13 @@
 import React from "react";
 
 const clients = [
-  "temp1",
-  "fexzns",
+  "amozon",
+  "faceRook",
   "Globe-News",
-  "Monfsesx",
+  "Microhard",
   "CreativeCore",
-  "DevStream",
-  "LogicLabs",
+  "VSRoad",
+  "Techno-World",
 ];
 
 const AboutMe = () => {
@@ -19,7 +19,11 @@ const AboutMe = () => {
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-teal-400 mb-4">About Me</h2>
         <p className="text-gray-400 max-w-2xl mx-auto text-lg mb-12">
-          I'm Rajender, a Frontend Developer with a passion for building elegant, functional, and responsive web apps. I specialize in React, Next.js, Tailwind, and modern web technologies. I'm eager to collaborate on impactful projects and help businesses grow through clean UI/UX.
+          I'm Rajender, a Full-Stack Web Developer with a passion for building
+          elegant, functional, and responsive web apps. I specialize in MERN,
+          Next.js, Tailwind, and modern web technologies. I'm eager to
+          collaborate on impactful projects and help businesses grow through
+          clean UI/UX.
         </p>
 
         <h3 className="text-2xl font-semibold text-purple-400 mb-6">

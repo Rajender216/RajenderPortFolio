@@ -3,6 +3,7 @@ import {
   loginController,
   logoutController,
   registerController,
+  sentMessageOfUser,
   verifyOtp,
 } from "../controllers/userControllers.js";
 
@@ -16,5 +17,7 @@ userRouter.post("/login", loginController);
 userRouter.post("/verifyotp", verifyOtp);
 // Route for user logout
 userRouter.get("/logout", logoutController);
+//sent message of user ot team for contact us
+userRouter.post("/connect", sentMessageOfUser);
 
 export default userRouter;

@@ -41,6 +41,35 @@ Raabadi and Code Team`,
   });
 };
 
+const sendEmail = async (name, email, message) => {
+  console.log(email);
+  await transporter.sendMail({
+    from: `"${name}" <${email}>`, // Custom display name
+    to: process.env.EMAIL_USER,
+    subject: `New message from ${name} to connect`,
+    text: message,
+  });
+};
+
+const sentMessageOfUser = async (req, res) => {
+  try {
+    const { name, email, message } = req.body;
+    if (!name || !email || !message) {
+      return res
+        .status(200)
+        .send({ success: false, message: "Please fill all fields" });
+    }
+    await sendEmail(name, email, message);
+    res.status(200).send({
+      success: true,
+      message: "Message sent successfully",
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ success: false, message: error.message });
+  }
+};
+
 const registerController = async (req, res) => {
   try {
     const { username, email, password } = req.body;
@@ -146,4 +175,10 @@ const logoutController = async (req, res) => {
   }
 };
 
-export { loginController, registerController, verifyOtp, logoutController };
+export {
+  loginController,
+  registerController,
+  verifyOtp,
+  logoutController,
+  sentMessageOfUser,
+};

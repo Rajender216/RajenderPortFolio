@@ -30,7 +30,7 @@ const Home = () => {
           <span className="text-purple-500 font-semibold">Web Developer</span>{" "}
           and a fresh graduate in Computer Science. I love building beautiful
           and functional web applications using modern technologies like{" "}
-          <span className="text-green-400">React</span>,{" "}
+          <span className="text-green-400">MERN</span>,{" "}
           <span className="text-green-400">Next.js</span>, and{" "}
           <span className="text-green-400">Tailwind CSS</span>.
         </p>
